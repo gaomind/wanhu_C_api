@@ -182,6 +182,11 @@
             <groupId>com.platform.whc.aip.storage</groupId>
             <artifactId>service</artifactId>
         </dependency>
+        <!--member service -->
+        <dependency>
+            <groupId>com.platform.whc.aip.member</groupId>
+            <artifactId>service</artifactId>
+        </dependency>
         <!-- https://mvnrepository.com/artifact/io.netty/netty-all -->
         <dependency>
             <groupId>io.netty</groupId>

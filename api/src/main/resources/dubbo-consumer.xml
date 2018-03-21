@@ -19,4 +19,6 @@
     <dubbo:application name="dubbo.c.port"/>
     <dubbo:registry protocol="zookeeper" address="${zk.address}" check="false" />
     <!-- 消费服务 -->
+    <dubbo:reference id="parkingCenterService" interface="com.whc.c.service.parking.ParkingCenterService"/>
+    <dubbo:reference id="parkingStorageService" interface="com.whc.c.service.parking.ParkingStorageService"/>
 </beans>

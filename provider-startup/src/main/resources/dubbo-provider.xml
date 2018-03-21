@@ -15,5 +15,7 @@
     <!--<dubbo:monitor address="${dubbo.monitor}"></dubbo:monitor>-->
         <!-- 要暴露的服务接口 -->
     <dubbo:protocol name="dubbo" port="${dubbo.c.port}"/>
+    <dubbo:service interface="com.whc.c.service.parking.ParkingCenterService" ref="parkingCenterService" />
+    <dubbo:service interface="com.whc.c.service.parking.ParkingStorageService" ref="parkingStorageService" />
 
  </beans>
