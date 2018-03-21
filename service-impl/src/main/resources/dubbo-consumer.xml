@@ -18,4 +18,14 @@
     </bean>
     <!--<dubbo:application name="dubbo-wanhuchina-lock-consumer"/>-->
     <dubbo:registry protocol="zookeeper" address="${zk.address}" check="false" />
+    <dubbo:reference id="cabinetService" interface="com.whc.aip.storage.service.warehouse.WarehouseCellService"></dubbo:reference>
+    <dubbo:reference id="DispensertWarehouseCellService" interface="com.whc.aip.storage.service.dispenser.DispensertWarehouseCellService"></dubbo:reference>
+    <dubbo:reference id="DispensertCabinetService" interface="com.whc.aip.storage.service.dispenser.DispensertCabinetService" ></dubbo:reference>
+    <dubbo:reference id="DispensertWarehouseService" interface="com.whc.aip.storage.service.dispenser.DispensertWarehouseService"></dubbo:reference>
+    <dubbo:reference id="warehouseConfigService" interface="com.whc.aip.storage.service.warehouse.WarehouseConfigService"></dubbo:reference>
+    <dubbo:reference id="orderService" interface="com.whc.aip.member.service.order.OrderService"></dubbo:reference>
+    <dubbo:reference id="memCenterService" interface="com.whc.aip.member.service.member.MemCenterService"></dubbo:reference>
+    <!--wanhuchina -storage -->
+    <dubbo:reference id="warehouseCellService" interface="com.whc.aip.storage.service.warehouse.WarehouseCellService"></dubbo:reference>
+
 </beans>
