@@ -132,7 +132,7 @@
     </dependencies>
 
     <build>
-        <finalName>api-member</finalName>
+        <finalName>api-C-API</finalName>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
