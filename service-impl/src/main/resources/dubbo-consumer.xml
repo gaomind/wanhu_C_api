@@ -25,7 +25,9 @@
     <dubbo:reference id="warehouseConfigService" interface="com.whc.aip.storage.service.warehouse.WarehouseConfigService"></dubbo:reference>
     <dubbo:reference id="orderService" interface="com.whc.aip.member.service.order.OrderService"></dubbo:reference>
     <dubbo:reference id="memCenterService" interface="com.whc.aip.member.service.member.MemCenterService"></dubbo:reference>
+    <dubbo:reference id="memberService" interface="com.whc.aip.member.service.member.MemberService"></dubbo:reference>
     <!--wanhuchina -storage -->
     <dubbo:reference id="warehouseCellService" interface="com.whc.aip.storage.service.warehouse.WarehouseCellService"></dubbo:reference>
+    <dubbo:reference id="warehouseService" interface="com.whc.aip.storage.service.warehouse.WarehouseService"></dubbo:reference>
 
 </beans>

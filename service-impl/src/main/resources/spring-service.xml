@@ -17,12 +17,12 @@
     <import resource="dubbo-consumer.xml"/>
     <import resource="spring-mybatis.xml"/>
     <!--自动扫描的包名,管理所有使用注解的类-->
-    <context:component-scan base-package="com.whc.aip.c.*"/>
+    <context:component-scan base-package="com.whc.c.*"/>
     <!--读写分离-->
     <bean id="replicationDataSourceAspect" class="com.wanhuchina.common.util.datasource.RWDataSourceAspect"/>
     <aop:config>
         <aop:aspect id="c" ref="replicationDataSourceAspect" order="1">
-            <aop:pointcut id="mapperTx" expression="execution( * com.whc.aip.c.service.impl..*.*(..))"/>
+            <aop:pointcut id="mapperTx" expression="execution( * com.whc.c.service.impl..*.*(..))"/>
             <aop:before method="before" pointcut-ref="mapperTx"/>
         </aop:aspect>
     </aop:config>

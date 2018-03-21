@@ -147,7 +147,7 @@ public class ParkingCenterServiceImpl implements ParkingCenterService {
     @Override
     @Transactional(propagation = Propagation.REQUIRED, rollbackFor = CommonException.class)
     public TxResultResponse updStoragePwd(String wahoceId, String orderId, String pwd) throws CommonException {
-        LOGGER.info("车场储物柜修改仓柜密码流程，updStoragePwd ，参数 wahoceId={},orderId={},pwd={},updOrderById-->订单状态修改失败", wahoceId,orderId,pwd);
+        LOGGER.info("车场储物柜修改仓柜密码流程，updStoragePwd ，参数 wahoceId={},orderId={},param={},updOrderById-->订单状态修改失败", wahoceId,orderId,pwd);
         TxResultResponse tx = new TxResultResponse(CommonCode.SUCCESS.getCode(),"操作成功");
         try {
             if(Strings.isNullOrEmpty(pwd)){
